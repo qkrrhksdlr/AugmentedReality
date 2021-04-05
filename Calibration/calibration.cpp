@@ -13,7 +13,7 @@ void calibration()
 
 	for (int j = 0; j < patSize.height; j++) {
 		for (int i = 0; i < patSize.width; i++) {
-			cv::Vec3f pt = cv::Vec3f(2.5f * i, 2.5f * j, 0.0f);
+			cv::Vec3f pt = cv::Vec3f(25.f * i, 25.f * j, 0.0f);
 			patPt.at<cv::Vec3f>(patSize.width * j + i) = pt;
 		}
 	}
